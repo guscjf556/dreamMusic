@@ -35,8 +35,8 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">드림뮤직 프로젝트</a>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+  <a class="navbar-brand" href="/dreamMusic/index.html"><span class="badge badge-pill badge-dark" style="font-size:2rem">드림뮤직 프로젝트</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -44,20 +44,17 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/dreamMusic/projectIntro.html">프로젝트 소개<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link" href="/dreamMusic/activityMain.html">활동 개요</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">차시별 활동</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="/dreamMusic/activity1.html">1차시</a>
+          <a class="dropdown-item" href="/dreamMusic/activity2.html">2차시</a>
+          <a class="dropdown-item" href="/dreamMusic/activity3.html">3차시</a>
         </div>
       </li>
     </ul>
@@ -65,92 +62,81 @@
 </nav>
 
 <main role="main">
-
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="data\1firefighter.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="data\1firefighter.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="data\1firefighter.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-  <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-5 mb-3"><span class="badge badge-pill badge-info">'드림뮤직'에 대해</h1>
-      <p>충북 외곽의 <strong>소규모 학교</strong>에 방문하여 <strong>영어와 음악 과목을 통합한 수업</strong>을 진행하고, 학생들이 주인공이 되는 <strong>영어 뮤직비디오</strong>를 제작하는 프로젝트명이자 프로젝트를 진행하는 청주교대 학생들이 이룬 팀입니다.<br><br>
-        저희의 프로젝트는 학생들이 영어가 지루한 공부의 대상이 아니라, 다른 세계의 사람들과 교류하는 데 사용할 수 있는 <u>유용한 의사소통 수단</u>이라는 인식을 가지도록 돕는 것을 목표로 합니다.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">자세히 보기 &raquo;</a></p>
-    </div>
-  </div>
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
+  <div class="container mt-3">
     <div class="row">
-      <div class="col-lg-4">
-        <svg width="140" height="140" viewBox="0 0 16 16" class="bi bi-calendar3-range-fill text-success mb-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-          <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2h16a2 2 0 0 0-2-2H2zm14 3H0v5h6a1 1 0 0 1 0 2H0v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7h-6a1 1 0 1 1 0-2h6V3z"/>
-          <title>Placeholder</title>
-        </svg>
-        <h2>수업 계획</h2>
-        <p>'드림뮤직'의 수업은 학생들이 영어 노래를 익히고, 뮤직비디오를 제작하여 전세계 사람들과 공유하는 작업으로 구성되어 있습니다.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">자세히 보기 &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg width="140" height="140" viewBox="0 0 16 16" class="bi bi-file-earmark-music-fill text-warning mb-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-          <path fill-rule="evenodd" d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"/>
-          <title>Placeholder</title>
-        </svg>
-        <h2>수업 자료</h2>
-        <p>드림뮤직은 학생들이 영어를 재미있게 배우도록 하기 위해 수업 안에서 여러 활동을 진행합니다. 클릭하시면 수업에 쓰인 활동 자료를 볼 수 있습니다. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">자세히 보기 &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg width="140" height="140" viewBox="0 0 16 16" class="bi bi-file-earmark-music-fill text-info mb-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-          <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
-          <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
-          <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
-          <title>Placeholder</title>
-        </svg>
-        <h2>수업 현황</h2>
-        <p>이 페이지는 차시마다 수업이 어떻게 이루어졌는지 확인할 수 있습니다.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">자세히 보기 &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-  </div>
+      <div class="col-sm-6">
+        <div class="container">
+          <div id="carouselExampleCaptions" class="carousel slide mt-5 mx-auto" style="height:300px;max-width:500px" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="height:300px">
+                <img src="data\main1.jpg" class="d-block w-100" style="height:300px" alt="...">
+              </div>
+              <div class="carousel-item" style="height:300px;">
+                <img src="data\main2.jpg" class="d-block w-100" style="height:300px" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <hr/>
+      </div>
+      <div class="col-sm-6 mt-5">
+        <div class="container">
+          <h2 class="mb-3"><span class="badge badge-pill badge-info">'드림뮤직'은...</h2>
+          <p>충북 외곽의 <strong>소규모 학교</strong>에 방문하여 <strong>영어와 음악 과목을 통합한 수업</strong>을 진행하고, 학생들이 주인공이 되는 <strong>영어 뮤직비디오</strong>를 제작하는 프로젝트명이자 프로젝트를 진행하는 청주교대 학생들이 이룬 팀입니다.<br><br>
+            저희의 프로젝트는 학생들이 영어가 지루한 공부의 대상이 아니라, 다른 세계의 사람들과 교류하는 데 사용할 수 있는 <u>유용한 의사소통 수단</u>이라는 인식을 가지도록 돕는 것을 목표로 합니다.</p>
+          <p><a class="btn btn-primary btn-sm" href="/dreamMusic/projectIntro.html" role="button">자세히 보기 &raquo;</a></p>
+        </div>
+        <hr/>
+      </div>
+    </div>
 
+
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-4">
+          <svg width="140" height="140" viewBox="0 0 16 16" class="bi bi-calendar3-range-fill text-success mb-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+            <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2h16a2 2 0 0 0-2-2H2zm14 3H0v5h6a1 1 0 0 1 0 2H0v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7h-6a1 1 0 1 1 0-2h6V3z"/>
+            <title>Placeholder</title>
+          </svg>
+          <h2>수업 계획</h2>
+          <p>'드림뮤직'의 수업은 학생들이 영어 노래를 익히고, 뮤직비디오를 제작하여 전세계 사람들과 공유하는 작업으로 구성되어 있습니다.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">자세히 보기 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <svg width="140" height="140" viewBox="0 0 16 16" class="bi bi-file-earmark-music-fill text-info mb-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+            <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+            <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+            <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+            <title>Placeholder</title>
+          </svg>
+          <h2>수업 현황</h2>
+          <p>이 페이지는 차시마다 수업이 어떻게 이루어졌는지 확인할 수 있습니다.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">자세히 보기 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <svg width="140" height="140" viewBox="0 0 16 16" class="bi bi-file-earmark-music-fill text-warning mb-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+            <path fill-rule="evenodd" d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"/>
+            <title>Placeholder</title>
+          </svg>
+          <h2>뮤직비디오</h2>
+          <p>판동초 학생들이 직접 기획하고 연출한 뮤직비디오를 볼 수 있습니다. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">자세히 보기 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div>
+  </div>
 </main>
 
 <footer class="container">
