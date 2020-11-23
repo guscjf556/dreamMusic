@@ -6,6 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
+    <meta property="og:image" content="data/dreamMusicLogoThumbnail.png">
+    <link href="data/dreamMusicLogo.png" rel="shortcut icon" type="image/x-icon">
     <title>드림뮤직 - 활동소개</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
@@ -16,7 +18,41 @@
 
     <style>
       body {
-        font-family: 'Nanum Gothic'
+        font-family: 'Nanum Gothic';
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+          -moz-animation: fadein 2s; /* Firefox < 16 */
+            -ms-animation: fadein 2s; /* Internet Explorer */
+            -o-animation: fadein 2s; /* Opera < 12.1 */
+                animation: fadein 2s;
+          }
+
+      @keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Firefox < 16 */
+      @-moz-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Safari, Chrome and Opera > 12.1 */
+      @-webkit-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Internet Explorer */
+      @-ms-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Opera < 12.1 */
+      @-o-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
       }
 
       .bd-placeholder-img {
@@ -39,13 +75,13 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-secondary">
-      <a class="navbar-brand d-none d-md-block" href="/dreamMusic/index.html">
-        <span class="badge badge-pill badge-dark" style="font-size:2rem">드림뮤직 프로젝트</span>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-secondary">
+      <a class="navbar-brand d-none d-lg-block" href="/dreamMusic/index.html">
+        <span class="badge badge-pill badge-dark" style="font-size:2rem"><img src="data/dreamMusicLogo.png" style="width:2rem"> 드림뮤직 프로젝트</span>
       </a>
-      <div class="d-md-none" style="margin-left:43%">
+      <div class="d-lg-none">
         <a class="navbar-brand" href="/dreamMusic/index.html" >
-          <img src="data/dreamMusicLogo.png" style="width:3rem;height:3rem;">
+          <img src="data/dreamMusicLogo.png" style="width:2rem"><strong>드림뮤직 프로젝트</strong>
         </a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +90,7 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="/dreamMusic/projectIntro.html">프로젝트 소개<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -69,7 +105,7 @@
               <a class="dropdown-item" href="/dreamMusic/activity3.html">3차시</a>
             </div>
           </li>
-          <li class="nav-item ml-md-5">
+          <li class="nav-item ml-lg-5">
             <a class="nav-link text-light" href="/dreamMusic/musicVideo.html"><strong>뮤직비디오</strong><span class="badge badge-danger">new</span></a>
           </li>
         </ul>
@@ -114,31 +150,34 @@
     <h2 class="my-3" style="text-align:center"><strong>팀 소개</strong></h2>
     <!-- Three columns of text below the carousel -->
     <div class="row">
-      <div class="col-lg-4 mb-4 px-4">
+      <div class="col-sm-4 mb-4 px-4">
         <div class="card border border-0">
           <img class="card-img-top rounded-circle mx-auto" src="data/kim.jpeg" alt="Card image" style="width:90%">
-          <div class="card-body">
+          <div class="card-body"  style="text-align: center;">
             <p class="card-text"><span class="badge badge-pill badge-success">영상 촬영 및 편집 담당</span></p>
-            <h4 style = "display:inline" class="card-title">김성원</h4><small> 청주교대 영어교육과</small>          
+            <h4>김성원</h4>
+            <small> 청주교대 영어교육과</small>          
           </div>
         </div>
       </div>
       <!-- /.col-lg-4 -->
-      <div class="col-lg-4 mb-4 px-4">
+      <div class="col-sm-4 mb-4 px-4">
         <div class="card border border-0">
           <img class="card-img-top rounded-circle mx-auto" src="data/yang.jpeg" alt="Card image" style="width:90%">
-          <div class="card-body">
+          <div class="card-body" style="text-align: center;">
             <p class="card-text"><span class="badge badge-pill badge-success">활동 준비 및 수업 담당</span></p>
-            <h4 style = "display:inline" class="card-title">양주원</h4><small> 청주교대 초등교육과</small>          
+            <h4>양주원</h4>
+            <small> 청주교대 초등교육과</small>          
           </div>
         </div>
       </div>
-      <div class="col-lg-4 mb-4 px-4">
+      <div class="col-sm-4 mb-4 px-4">
         <div class="card border border-0">
           <img class="card-img-top rounded-circle mx-auto" src="data/im.jpg" alt="Card image" style="width:90%">
-          <div class="card-body">
+          <div class="card-body" style="text-align: center;">
             <p class="card-text"><span class="badge badge-pill badge-success">온라인 학습 및 물품 담당</span></p>
-            <h4 style = "display:inline" class="card-title">임현철</h4><small> 청주교대 영어교육과</small>          
+            <h4>임현철</h4>
+            <small> 청주교대 영어교육과</small>          
           </div>
         </div>
       </div>
@@ -161,7 +200,7 @@
       <div class="card border border-0">
         <img class="card-img-top mx-auto" src="data/chungbukinjae.png" alt="Card image" style="width:100%">
         <div class="card-body mx-auto mt-n4">
-          <a href="https://www.schoolinfo.go.kr/ei/ss/Pneiss_b01_s0.do?HG_CD=M100000470" target="_blank"><span class="badge badge-pill badge-dark"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-hand-index" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <a href="http://www.chrdf.or.kr/home/main.do" target="_blank"><span class="badge badge-pill badge-dark"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-hand-index" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M6.75 1a.75.75 0 0 0-.75.75V9a.5.5 0 0 1-1 0v-.89l-1.003.2a.5.5 0 0 0-.399.546l.345 3.105a1.5 1.5 0 0 0 .243.666l1.433 2.15a.5.5 0 0 0 .416.223h6.385a.5.5 0 0 0 .434-.252l1.395-2.442a2.5 2.5 0 0 0 .317-.991l.272-2.715a1 1 0 0 0-.995-1.1h23.5v1a.5.5 0 0 1-1 0V7.154a4.208 4.208 0 0 0-.2-.26c-.187-.222-.368-.383-.486-.43-.124-.05-.392-.063-.708-.039a4.844 4.844 0 0 0-.106.01V8a.5.5 0 0 1-1 0V5.986c0-.167-.073-.272-.15-.314a1.657 1.657 0 0 0-.448-.182c-.179-.035-.5-.04-.816-.027l-.086.004V8a.5.5 0 0 1-1 0V1.75A.75.75 0 0 0 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 0 0-3.5 0v5.34l-1.199.24a1.5 1.5 0 0 0-1.197 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.272-2.715a2 2 0 0 0-1.99-2.199h-.582a5.184 5.184 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.634 2.634 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/>
           </svg> 충북인재양성재단 웹페이지 가기</span></a>        
         </div>

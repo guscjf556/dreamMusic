@@ -6,7 +6,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>드림뮤직 프로젝트 메인</title>
+    <meta property="og:image" content="data/dreamMusicLogoThumbnail.png">
+    <link href="data/dreamMusicLogo.png" rel="shortcut icon" type="image/x-icon">
+    <title>🌈드림뮤직 프로젝트🎶</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
 
@@ -16,7 +18,41 @@
 
     <style>
       body {
-        font-family: 'Nanum Gothic'
+        font-family: 'Nanum Gothic';
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+          -moz-animation: fadein 2s; /* Firefox < 16 */
+            -ms-animation: fadein 2s; /* Internet Explorer */
+            -o-animation: fadein 2s; /* Opera < 12.1 */
+                animation: fadein 2s;
+          }
+
+      @keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Firefox < 16 */
+      @-moz-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Safari, Chrome and Opera > 12.1 */
+      @-webkit-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Internet Explorer */
+      @-ms-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Opera < 12.1 */
+      @-o-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
       }
 
       .bd-placeholder-img {
@@ -39,13 +75,13 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-secondary">
-      <a class="navbar-brand d-none d-md-block" href="/dreamMusic/index.html">
-        <span class="badge badge-pill badge-dark" style="font-size:2rem">드림뮤직 프로젝트</span>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-secondary">
+      <a class="navbar-brand d-none d-lg-block" href="/dreamMusic/index.html">
+        <span class="badge badge-pill badge-dark" style="font-size:2rem"><img src="data/dreamMusicLogo.png" style="width:2rem"> 드림뮤직 프로젝트</span>
       </a>
-      <div class="d-md-none" style="margin-left:43%">
+      <div class="d-lg-none">
         <a class="navbar-brand" href="/dreamMusic/index.html" >
-          <img src="data/dreamMusicLogo.png" style="width:3rem;height:3rem;">
+          <img src="data/dreamMusicLogo.png" style="width:2rem"><strong>드림뮤직 프로젝트</strong>
         </a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +105,7 @@
               <a class="dropdown-item" href="/dreamMusic/activity3.html">3차시</a>
             </div>
           </li>
-          <li class="nav-item ml-md-5">
+          <li class="nav-item ml-lg-5">
             <a class="nav-link text-light" href="/dreamMusic/musicVideo.html"><strong>뮤직비디오</strong><span class="badge badge-danger">new</span></a>
           </li>
         </ul>
@@ -107,8 +143,10 @@
         <div class="container">
           <h2 class="mb-3"><strong>'드림뮤직'은...</strong></h2>
           <p>충북 외곽의 <span class="badge badge-secondary">소규모 학교</span>에 방문하여 <span class="badge badge-secondary">영어</span>와 <span class="badge badge-secondary">음악</span>을 통합한 수업을 진행하고, 학생들이 주인공이 되는 <span class="badge badge-warning">영어 뮤직비디오</span>를 제작하는 프로젝트명이자 프로젝트를 진행하는 청주교대 학생들이 이룬 팀입니다.<br><br>
-            저희의 프로젝트는 학생들이 영어가 지루한 공부의 대상이 아니라, 다른 세계의 사람들과 교류하는 데 사용할 수 있는 <span class="badge badge-secondary">유용한 의사소통 수단</span>이라는 인식을 가지도록 돕는 것을 목표로 합니다.</p>
-          <p><a class="btn btn-outline-dark btn-sm" href="/dreamMusic/projectIntro.html" role="button">프로젝트 소개 페이지 &raquo;</a></p>
+          저희의 프로젝트는 학생들이 영어가 지루한 공부의 대상이 아니라, 다른 세계의 사람들과 교류하는 데 사용할 수 있는 <span class="badge badge-secondary">유용한 의사소통 수단</span>이라는 인식을 가지도록 돕는 것을 목표로 합니다.</p>
+          <div class="d-flex justify-content-center">
+            <a class="btn btn-dark btn-sm mx-auto" href="/dreamMusic/projectIntro.html" role="button">프로젝트 소개 페이지 &raquo;</a>
+          </div>
         </div>
         <hr class="d-lg-none"/>
       </div>

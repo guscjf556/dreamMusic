@@ -6,6 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
+    <meta property="og:image" content="data/dreamMusicLogoThumbnail.png">
+    <link href="data/dreamMusicLogo.png" rel="shortcut icon" type="image/x-icon">
     <title>드림뮤직 - 활동구성</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
@@ -17,8 +19,43 @@
 
     <style>
       body {
-        font-family: 'Nanum Gothic'
+        font-family: 'Nanum Gothic';
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+          -moz-animation: fadein 2s; /* Firefox < 16 */
+            -ms-animation: fadein 2s; /* Internet Explorer */
+            -o-animation: fadein 2s; /* Opera < 12.1 */
+                animation: fadein 2s;
+          }
+
+      @keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
       }
+
+      /* Firefox < 16 */
+      @-moz-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Safari, Chrome and Opera > 12.1 */
+      @-webkit-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Internet Explorer */
+      @-ms-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Opera < 12.1 */
+      @-o-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+      
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -39,13 +76,13 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-secondary">
-      <a class="navbar-brand d-none d-md-block" href="/dreamMusic/index.html">
-        <span class="badge badge-pill badge-dark" style="font-size:2rem">드림뮤직 프로젝트</span>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-secondary">
+      <a class="navbar-brand d-none d-lg-block" href="/dreamMusic/index.html">
+        <span class="badge badge-pill badge-dark" style="font-size:2rem"><img src="data/dreamMusicLogo.png" style="width:2rem"> 드림뮤직 프로젝트</span>
       </a>
-      <div class="d-md-none" style="margin-left:43%">
+      <div class="d-lg-none">
         <a class="navbar-brand" href="/dreamMusic/index.html" >
-          <img src="data/dreamMusicLogo.png" style="width:3rem;height:3rem;">
+          <img src="data/dreamMusicLogo.png" style="width:2rem"><strong>드림뮤직 프로젝트</strong>
         </a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +94,7 @@
           <li class="nav-item">
             <a class="nav-link" href="/dreamMusic/projectIntro.html">프로젝트 소개<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="/dreamMusic/activityMain.html">활동 구성</a>
           </li>
           <li class="nav-item dropdown">
@@ -69,7 +106,7 @@
               <a class="dropdown-item" href="/dreamMusic/activity3.html">3차시</a>
             </div>
           </li>
-          <li class="nav-item ml-md-5">
+          <li class="nav-item ml-lg-5">
             <a class="nav-link text-light" href="/dreamMusic/musicVideo.html"><strong>뮤직비디오</strong><span class="badge badge-danger">new</span></a>
           </li>
         </ul>
@@ -89,7 +126,7 @@
               <span class="badge badge-pill badge-secondary">1</span>알파벳 찾기<br>
               <span class="badge badge-pill badge-secondary">2</span>노래 듣고 카드 배열하기<br>
             </p>
-            <a href="/dreamMusic/activity1.html" class="btn btn-sm btn-outline-dark" style="float:right;">자세히 보기</a>
+            <a href="/dreamMusic/activity1.html" class="btn btn-sm btn-outline-dark" style="float:right;">활동 기록 >></a>
           </div>
         </div>
       </div>
@@ -102,7 +139,7 @@
               <span class="badge badge-pill badge-secondary">1</span>노래 듣고 연습하기<br>
               <span class="badge badge-pill badge-secondary">2</span>노래에 나오는 직업 단어 익히기<br>
             </p>
-            <a href="/dreamMusic/activityOnline.html" class="btn btn-sm btn-outline-dark" style="float:right;">자세히 보기</a>
+            <a href="/dreamMusic/activityOnline.html" class="btn btn-sm btn-outline-dark" style="float:right;">활동 기록 >></a>
           </div>
         </div>
       </div>
@@ -117,7 +154,7 @@
               <span class="badge badge-pill badge-secondary">1</span>노래 연습하기<br>
               <span class="badge badge-pill badge-secondary">2</span>뮤직비디오 기획
             </p>
-            <a href="/dreamMusic/activity2.html" class="btn btn-sm btn-outline-dark" style="float:right;">자세히 보기</a>
+            <a href="/dreamMusic/activity2.html" class="btn btn-sm btn-outline-dark" style="float:right;">활동 기록 >></a>
           </div>
         </div>
       </div>
@@ -130,7 +167,7 @@
               <span class="badge badge-pill badge-secondary">1</span>뮤직비디오 촬영<br>
               <span class="badge badge-pill badge-secondary">2</span>자유 활동 및 촬영
             </p>
-            <a href="/dreamMusic/activity3.html" class="btn btn-sm btn-outline-dark" style="float:right;">자세히 보기</a>
+            <a href="/dreamMusic/activity3.html" class="btn btn-sm btn-outline-dark" style="float:right;">활동 기록 >></a>
           </div>
         </div>
       </div>

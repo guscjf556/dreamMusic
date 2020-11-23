@@ -6,6 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
+    <meta property="og:image" content="data/dreamMusicLogoThumbnail.png">
+    <link href="data/dreamMusicLogo.png" rel="shortcut icon" type="image/x-icon">
     <title>드림뮤직 - 3차시</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
@@ -17,7 +19,41 @@
 
     <style>
       body {
-        font-family: 'Nanum Gothic'
+        font-family: 'Nanum Gothic';
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+          -moz-animation: fadein 2s; /* Firefox < 16 */
+            -ms-animation: fadein 2s; /* Internet Explorer */
+            -o-animation: fadein 2s; /* Opera < 12.1 */
+                animation: fadein 2s;
+          }
+
+      @keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Firefox < 16 */
+      @-moz-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Safari, Chrome and Opera > 12.1 */
+      @-webkit-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Internet Explorer */
+      @-ms-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+      }
+
+      /* Opera < 12.1 */
+      @-o-keyframes fadein {
+          from { opacity: 0; }
+          to   { opacity: 1; }
       }
 
       .bd-placeholder-img {
@@ -40,13 +76,13 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-secondary">
-      <a class="navbar-brand d-none d-md-block" href="/dreamMusic/index.html">
-        <span class="badge badge-pill badge-dark" style="font-size:2rem">드림뮤직 프로젝트</span>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-secondary">
+      <a class="navbar-brand d-none d-lg-block" href="/dreamMusic/index.html">
+        <span class="badge badge-pill badge-dark" style="font-size:2rem"><img src="data/dreamMusicLogo.png" style="width:2rem"> 드림뮤직 프로젝트</span>
       </a>
-      <div class="d-md-none" style="margin-left:43%">
+      <div class="d-lg-none">
         <a class="navbar-brand" href="/dreamMusic/index.html" >
-          <img src="data/dreamMusicLogo.png" style="width:3rem;height:3rem;">
+          <img src="data/dreamMusicLogo.png" style="width:2rem"><strong>드림뮤직 프로젝트</strong>
         </a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,16 +97,16 @@
           <li class="nav-item">
             <a class="nav-link" href="/dreamMusic/activityMain.html">활동 구성</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">차시별 활동</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="/dreamMusic/activity1.html">1차시</a>
               <a class="dropdown-item" href="/dreamMusic/activityOnline.html">온라인 학습</a>
               <a class="dropdown-item" href="/dreamMusic/activity2.html">2차시</a>
-              <a class="dropdown-item" href="/dreamMusic/activity3.html">3차시</a>
+              <a class="dropdown-item active" href="/dreamMusic/activity3.html">3차시</a>
             </div>
           </li>
-          <li class="nav-item ml-md-5">
+          <li class="nav-item ml-lg-5">
             <a class="nav-link text-light" href="/dreamMusic/musicVideo.html"><strong>뮤직비디오</strong><span class="badge badge-danger">new</span></a>
           </li>
         </ul>
@@ -85,7 +121,7 @@
       <p>학생들이 주인공이 되어 뮤직비디오를 촬영하고, 자유 활동 촬영을 진행했습니다.</p>
       <hr/>
     </div>
-    <div class="container">
+    <div class="container mb-3">
       <div class="row">
         <div class="col-lg-6">
           <h3><span class="badge badge-pill badge-dark">활동1. 뮤직비디오 촬영</span></h3>
@@ -96,15 +132,15 @@
               </ol>
           <div class="carousel-inner">
               <div class="carousel-item active" style="height:300px;">
-              <img src="data\activity2-1.jpg" class="d-block w-100" style="height:300px;" alt="...">
+              <img src="data\recording.png" class="d-block w-100" style="height:300px;" alt="...">
               <div class="carousel-caption d-block text-white">
-                  <h5><span class="badge badge-secondary">활동 사진</span></h5>
+                  <h5><span class="badge badge-secondary">노래 녹음</span></h5>
               </div>
               </div>
               <div class="carousel-item" style="height:300px;">
-              <img src="data\activity2-2.jpg" class="d-block w-100" style="height:300px;" alt="...">
+              <img src="data\shooting1.png" class="d-block w-100" style="height:300px;" alt="...">
               <div class="carousel-caption d-block text-white">
-                  <h5><span class="badge badge-secondary">활동 사진</span></h5>
+                  <h5><span class="badge badge-secondary">촬영</span></h5>
               </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -119,18 +155,14 @@
           </div>
           <h4><span class="badge badge-pill badge-success">활동 설명</span></h4>
           <p>
-            학생들이 주인공이 되는 뮤직비디오들을 보면서 장면을 어떻게 구성할지 생각해보는 활동입니다. 창작에 익숙하지 않은 학생들이 아이디어를 얻을 수 있도록 돕는 과정입니다.
+            판동초 5학년 1반 학생들이 부른 노래를 녹음하고, 전차시에 구상한 뮤직비디오 장면들을 촬영합니다.
           </p>
-          <div class="d-flex justify-content-center">
-              <a class="btn btn-info btn-sm mx-1" href="https://www.youtube.com/watch?v=UJyYWzKIbAM" target="_blank">뮤직비디오 예시1 보기</a>
-              <a class="btn btn-info btn-sm mx-1" href="https://www.youtube.com/watch?v=xbqNUniaEgw" target="_blank">뮤직비디오 예시2 보기</a>
-          </div>
           <hr class="d-lg-none"/>
         </div>          
         <div class="col-lg-6">
           <h3><span class="badge badge-pill badge-dark">활동2. 자유 활동 및 촬영</span></h3>
     
-          <div id="carouselExampleCaptions2" class="carousel slide m-3 mx-auto" style="height:300px;" data-ride="carousel">
+          <div id="carouselExampleCaptions2" class="carousel slide m-3 mx-auto" style="height:300px; max-width:500px" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleCaptions2" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleCaptions2" data-slide-to="1"></li>
@@ -149,7 +181,7 @@
                   <h5><span class="badge badge-secondary">활동 결과물</span></h5>
                 </div>
               </div>
-              <div class="carousel-item" style="height:300px;max-width:300px;">
+              <div class="carousel-item mx-auto" style="height:300px;">
                 <img src="data\activity2-5.jpg" class="d-block w-100" style="height:300px;max-width:300px;" alt="...">
                 <div class="carousel-caption d-block text-white">
                     <h5><span class="badge badge-secondary">기념 사진</span></h5>
@@ -167,14 +199,15 @@
           </div>
           <h4><span class="badge badge-pill badge-success">활동 설명</span></h4>
           <p>
-            뮤직비디오에 추가될 장면들을 촬영하기 위해 교사와 학생들이 운동장에서 자유롭게 활동하고, 그 장면을 드론을 이용하여 촬영했습니다.
+            뮤직비디오에 추가될 장면들을 촬영하기 위해 교사와 학생들이 운동장에서 자유롭게 활동하고, 그 장면을 드론 등으로 촬영합니다.
           </p>
           <hr class="d-lg-none"/>
         </div>
       </div>
     </div>
-    <div class="d-flex justify-content-start">
+    <div class="d-flex justify-content-between">
       <a class="btn btn-dark btn-sm" href="activity2.html">&lt;&lt; 2차시</a>
+      <a class="btn btn-danger btn-sm" href="musicVideo.html">뮤직비디오 >></a>
     </div>
   </div>
   <!-- Main jumbotron for a primary marketing message or call to action -->
