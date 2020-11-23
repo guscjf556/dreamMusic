@@ -6,15 +6,20 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Jumbotron Template · Bootstrap</title>
+    <title>드림뮤직 - 1차시</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Nanum Gothic' rel='stylesheet' type='text/css'>
 
 
     <style>
+      body {
+        font-family: 'Nanum Gothic'
+      }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -35,27 +40,38 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-      <a class="navbar-brand" href="/dreamMusic/index.html"><span class="badge badge-dark" style="font-size:2rem">드림뮤직 프로젝트</span></a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-secondary">
+      <a class="navbar-brand d-none d-md-block" href="/dreamMusic/index.html">
+        <span class="badge badge-pill badge-dark" style="font-size:2rem">드림뮤직 프로젝트</span>
+      </a>
+      <div class="d-md-none" style="margin-left:43%">
+        <a class="navbar-brand" href="/dreamMusic/index.html" >
+          <img src="data/dreamMusicLogo.png" style="width:3rem;height:3rem;">
+        </a>
+      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="/dreamMusic/projectIntro.html">프로젝트 소개<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/dreamMusic/activityMain.html">활동 개요</a>
+            <a class="nav-link" href="/dreamMusic/activityMain.html">활동 구성</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">차시별 활동</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="/dreamMusic/activity1.html">1차시</a>
+              <a class="dropdown-item" href="/dreamMusic/activityOnline.html">온라인 학습</a>
               <a class="dropdown-item" href="/dreamMusic/activity2.html">2차시</a>
               <a class="dropdown-item" href="/dreamMusic/activity3.html">3차시</a>
             </div>
+          </li>
+          <li class="nav-item ml-md-5">
+            <a class="nav-link text-light" href="/dreamMusic/musicVideo.html"><strong>뮤직비디오</strong><span class="badge badge-danger">new</span></a>
           </li>
         </ul>
       </div>
@@ -64,13 +80,13 @@
 <main role="main">
   <div class="container mt-5">
     <div class="container">
-      <h1 class="my-3" style="text-align:center"><span class="badge badge-info">1차시 수업</span></h1>
-      <h3><span class="badge badge-pill badge-dark">수업 목표</span></h3>
+      <h2 class="my-3" style="text-align:center"><strong>1차시 활동</strong></h2>
+      <h3><span class="badge badge-pill badge-dark">활동 구성</span></h3>
       <p>학생들과 관계를 형성하고 영어에 대한 심리적 부담감을 완화합니다.</p>
       <hr/>
     </div>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-lg-6">
         <div class="container">
           <h3><span class="badge badge-pill badge-dark">활동1. 알파벳 퍼즐</span></h3>
           <div id="carouselExampleCaptions" class="carousel slide m-3 mx-auto" style="height:300px;max-width:500px" data-ride="carousel">
@@ -119,10 +135,10 @@
           <p>
             앞으로 할 활동에 대한 부담감을 줄이고 학생들과의 관계를 형성하기 위한 활동입니다. 퍼즐은 두 가지가 있습니다. 첫 번째는 선생님들의 이름 철자를 활동지에서 찾는 방식이고, 두 번째는 직업 단어를 찾아 활동지에 표시하는 방식입니다. 
           </p>
-          <hr/>
+          <hr class="d-lg-none"/>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-lg-6">
         <div class="container">
           <h3><span class="badge badge-pill badge-dark">활동2. 노래 듣고 카드 배열하기</span></h3>
           <div id="carouselExampleCaptions2" class="carousel slide m-3 mx-auto" style="height:300px;max-width:500px" data-ride="carousel">
@@ -162,19 +178,23 @@
           </div>
           <h4><span class="badge badge-pill badge-success">활동 설명</span></h4>
           <p>
-            <span class="badge badge-pill badge-info">People in My Town</span>이라는 영어 노래를 들으면서 노래에 등장한 직업을 순서대로 배열하는 활동입니다. 학생들의 영어 수준을 파악함과 동시에 앞으로의 수업을 준비하기 위한 사전 활동입니다.  
+            <span class="badge badge-pill badge-info">People in My Town</span>이라는 영어 노래를 들으면서 노래에 등장한 직업을 순서대로 배열하는 활동입니다. 학생들의 영어 수준을 파악함과 동시에 앞으로의 활동을 준비하기 위한 사전 작업입니다.  
           </p>
           <div style="text-align:center;">
-            <a class="btn btn-info btn-sm" href="https://www.youtube.com/watch?v=JBXaupIJHr8" target="_blank">People in My Town 듣기</a>
+            <a class="btn btn-outline-info btn-sm" href="https://www.youtube.com/watch?v=JBXaupIJHr8" target="_blank">People in My Town 듣기</a>
           </div>
         </div>
       </div>
+    </div>
+    <br>
+    <div class="d-flex justify-content-end">
+      <a class="btn btn-dark btn-sm" href="activityOnline.html">온라인 학습 >></a>
     </div>
   </div>
 </main>
 
 <footer class="container mt-5">
-  <span>&copy; Company 2017-2020</span>
+  <span>&copy; DreamMusic Project 2020</span>
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

@@ -6,15 +6,19 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Jumbotron Template · Bootstrap</title>
+    <title>드림뮤직 - 활동소개</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
+    <link href='http://fonts.googleapis.com/css?family=Nanum Gothic' rel='stylesheet' type='text/css'>
 
     <style>
+      body {
+        font-family: 'Nanum Gothic'
+      }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -35,27 +39,38 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-      <a class="navbar-brand" href="/dreamMusic/index.html"><span class="badge badge-dark" style="font-size:2rem">드림뮤직 프로젝트</span></a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-secondary">
+      <a class="navbar-brand d-none d-md-block" href="/dreamMusic/index.html">
+        <span class="badge badge-pill badge-dark" style="font-size:2rem">드림뮤직 프로젝트</span>
+      </a>
+      <div class="d-md-none" style="margin-left:43%">
+        <a class="navbar-brand" href="/dreamMusic/index.html" >
+          <img src="data/dreamMusicLogo.png" style="width:3rem;height:3rem;">
+        </a>
+      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="/dreamMusic/projectIntro.html">프로젝트 소개<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/dreamMusic/activityMain.html">활동 개요</a>
+            <a class="nav-link" href="/dreamMusic/activityMain.html">활동 구성</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">차시별 활동</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="/dreamMusic/activity1.html">1차시</a>
+              <a class="dropdown-item" href="/dreamMusic/activityOnline.html">온라인 학습</a>
               <a class="dropdown-item" href="/dreamMusic/activity2.html">2차시</a>
               <a class="dropdown-item" href="/dreamMusic/activity3.html">3차시</a>
             </div>
+          </li>
+          <li class="nav-item ml-md-5">
+            <a class="nav-link text-light" href="/dreamMusic/musicVideo.html"><strong>뮤직비디오</strong><span class="badge badge-danger">new</span></a>
           </li>
         </ul>
       </div>
@@ -64,9 +79,9 @@
 <main role="main">
   <div class="container mt-5">
     <div class="container">
-      <h1 class="my-3" style="text-align:center"><span class="badge badge-info">기획 의도와 기대 효과</span></h1>
+      <h2 class="my-3" style="text-align:center"><strong>기획 의도와 기대 효과</strong></h2>
       <h3><span class="badge badge-pill badge-dark">기획 의도</span></h3>
-      <p>학령인구 감소로 충북 초등학교 268 곳 중 절반에 해당하는 131 곳이 6학급 이하의 ‘작은 학교’입니다. 이러한 학교가 있는 지역은 교육 인프라가 열악한 경우가 많습니다. 학교에 배정된 교사의 수가 적고, 사교육 기관이 들어올 만큼 학생 수가 많지도 않기 때문입니다. 따라서 영어를 접할 기회가 상대적으로 적은 작은 마을의 학생들은 낮은 영어 성취도를 보이는 경향이 있습니다. <br><br>저희는 이러한 학교를 대상으로 아이들이 영어를 자연스럽게 접하고 흥미를 느낄 수 있도록 영어 노래를 통한 교육과 학습을 바탕으로 한 뮤직비디오를 제작하고 유튜브 플랫폼에 업로드하는 활동을 기획했습니다. </p><br>
+      <p>학령인구 감소로 충북 초등학교 268 곳 중 절반에 해당하는 131 곳이 6학급 이하의 <span class="badge badge-secondary">작은 학교</span>입니다. 이러한 학교가 있는 지역은 교육 인프라가 열악한 경우가 많습니다. 학교에 배정된 교사의 수가 적고, 사교육 기관이 들어올 만큼 학생 수가 많지도 않기 때문입니다. 따라서 영어를 접할 기회가 상대적으로 적은 작은 마을의 학생들은 <span class="badge badge-secondary">낮은 영어 성취도</span>를 보이는 경향이 있습니다. <br><br>저희는 이러한 학교를 대상으로 아이들이 영어를 자연스럽게 접하고 흥미를 느낄 수 있도록 <span class="badge badge-secondary">영어 노래</span>를 통한 교육과 학습을 바탕으로 한 <span class="badge badge-secondary">뮤직비디오</span>를 제작하고 유튜브 플랫폼에 업로드하는 활동을 기획했습니다. </p><br>
       <h3><span class="badge badge-pill badge-dark">기대 효과</span></h3>
         <div class="row">
           <div class="col-sm-4">
@@ -96,7 +111,7 @@
         </div>
     </div>
     <hr/>
-    <h1 class="my-3" style="text-align:center"><span class="badge badge-info">팀 소개</span></h1>
+    <h2 class="my-3" style="text-align:center"><strong>팀 소개</strong></h2>
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4 mb-4 px-4">
@@ -129,25 +144,25 @@
       </div>
     </div><!-- /.row -->
     <hr/>
-    <div class="container">
-      <h1 class="my-3" style="text-align:center"><span class="badge badge-info">대상 학교</span></h1>
+    <div class="container mt-3">
+      <h3 class="my-3" style="text-align:center"><strong>대상 학교</strong></h3>
       <div class="card border border-0">
         <img class="card-img-top mx-auto" src="data/pandong.png" alt="Card image" style="width:210px;height:80px">
         <div class="card-body mx-auto mt-n4">
           <a href="https://www.schoolinfo.go.kr/ei/ss/Pneiss_b01_s0.do?HG_CD=M100000470" target="_blank"><span class="badge badge-pill badge-dark"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-hand-index" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M6.75 1a.75.75 0 0 0-.75.75V9a.5.5 0 0 1-1 0v-.89l-1.003.2a.5.5 0 0 0-.399.546l.345 3.105a1.5 1.5 0 0 0 .243.666l1.433 2.15a.5.5 0 0 0 .416.223h6.385a.5.5 0 0 0 .434-.252l1.395-2.442a2.5 2.5 0 0 0 .317-.991l.272-2.715a1 1 0 0 0-.995-1.1H13.5v1a.5.5 0 0 1-1 0V7.154a4.208 4.208 0 0 0-.2-.26c-.187-.222-.368-.383-.486-.43-.124-.05-.392-.063-.708-.039a4.844 4.844 0 0 0-.106.01V8a.5.5 0 0 1-1 0V5.986c0-.167-.073-.272-.15-.314a1.657 1.657 0 0 0-.448-.182c-.179-.035-.5-.04-.816-.027l-.086.004V8a.5.5 0 0 1-1 0V1.75A.75.75 0 0 0 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 0 0-3.5 0v5.34l-1.199.24a1.5 1.5 0 0 0-1.197 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.272-2.715a2 2 0 0 0-1.99-2.199h-.582a5.184 5.184 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.634 2.634 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/>
+            <path fill-rule="evenodd" d="M6.75 1a.75.75 0 0 0-.75.75V9a.5.5 0 0 1-1 0v-.89l-1.003.2a.5.5 0 0 0-.399.546l.345 3.105a1.5 1.5 0 0 0 .243.666l1.433 2.15a.5.5 0 0 0 .416.223h6.385a.5.5 0 0 0 .434-.252l1.395-2.442a2.5 2.5 0 0 0 .317-.991l.272-2.715a1 1 0 0 0-.995-1.1h23.5v1a.5.5 0 0 1-1 0V7.154a4.208 4.208 0 0 0-.2-.26c-.187-.222-.368-.383-.486-.43-.124-.05-.392-.063-.708-.039a4.844 4.844 0 0 0-.106.01V8a.5.5 0 0 1-1 0V5.986c0-.167-.073-.272-.15-.314a1.657 1.657 0 0 0-.448-.182c-.179-.035-.5-.04-.816-.027l-.086.004V8a.5.5 0 0 1-1 0V1.75A.75.75 0 0 0 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 0 0-3.5 0v5.34l-1.199.24a1.5 1.5 0 0 0-1.197 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.272-2.715a2 2 0 0 0-1.99-2.199h-.582a5.184 5.184 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.634 2.634 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/>
           </svg> 판동초 정보 보기</span></a>        
         </div>
       </div>
     </div>
     <hr/>
     <div class="container">
-      <h1 class="my-3" style="text-align:center"><span class="badge badge-info">후원 기관</span></h1>
+      <h3 style="text-align:center"><strong>후원 기관</strong></h3>
       <div class="card border border-0">
         <img class="card-img-top mx-auto" src="data/chungbukinjae.png" alt="Card image" style="width:100%">
         <div class="card-body mx-auto mt-n4">
           <a href="https://www.schoolinfo.go.kr/ei/ss/Pneiss_b01_s0.do?HG_CD=M100000470" target="_blank"><span class="badge badge-pill badge-dark"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-hand-index" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M6.75 1a.75.75 0 0 0-.75.75V9a.5.5 0 0 1-1 0v-.89l-1.003.2a.5.5 0 0 0-.399.546l.345 3.105a1.5 1.5 0 0 0 .243.666l1.433 2.15a.5.5 0 0 0 .416.223h6.385a.5.5 0 0 0 .434-.252l1.395-2.442a2.5 2.5 0 0 0 .317-.991l.272-2.715a1 1 0 0 0-.995-1.1H13.5v1a.5.5 0 0 1-1 0V7.154a4.208 4.208 0 0 0-.2-.26c-.187-.222-.368-.383-.486-.43-.124-.05-.392-.063-.708-.039a4.844 4.844 0 0 0-.106.01V8a.5.5 0 0 1-1 0V5.986c0-.167-.073-.272-.15-.314a1.657 1.657 0 0 0-.448-.182c-.179-.035-.5-.04-.816-.027l-.086.004V8a.5.5 0 0 1-1 0V1.75A.75.75 0 0 0 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 0 0-3.5 0v5.34l-1.199.24a1.5 1.5 0 0 0-1.197 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.272-2.715a2 2 0 0 0-1.99-2.199h-.582a5.184 5.184 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.634 2.634 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/>
+            <path fill-rule="evenodd" d="M6.75 1a.75.75 0 0 0-.75.75V9a.5.5 0 0 1-1 0v-.89l-1.003.2a.5.5 0 0 0-.399.546l.345 3.105a1.5 1.5 0 0 0 .243.666l1.433 2.15a.5.5 0 0 0 .416.223h6.385a.5.5 0 0 0 .434-.252l1.395-2.442a2.5 2.5 0 0 0 .317-.991l.272-2.715a1 1 0 0 0-.995-1.1h23.5v1a.5.5 0 0 1-1 0V7.154a4.208 4.208 0 0 0-.2-.26c-.187-.222-.368-.383-.486-.43-.124-.05-.392-.063-.708-.039a4.844 4.844 0 0 0-.106.01V8a.5.5 0 0 1-1 0V5.986c0-.167-.073-.272-.15-.314a1.657 1.657 0 0 0-.448-.182c-.179-.035-.5-.04-.816-.027l-.086.004V8a.5.5 0 0 1-1 0V1.75A.75.75 0 0 0 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 0 0-3.5 0v5.34l-1.199.24a1.5 1.5 0 0 0-1.197 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.272-2.715a2 2 0 0 0-1.99-2.199h-.582a5.184 5.184 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.634 2.634 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/>
           </svg> 충북인재양성재단 웹페이지 가기</span></a>        
         </div>
       </div>
@@ -158,7 +173,7 @@
 </main>
 
 <footer class="container">
-  <p>&copy; Company 2017-2020</p>
+  <p>&copy; DreamMusic Project 2020</p>
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
